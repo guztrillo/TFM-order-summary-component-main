@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+     --pale-blue: hsl(225, 100%, 94%);
+     --bright-blue: hsl(245, 75%, 52%);
+     --very-pale-blue: hsl(225, 100%, 98%);
+     --desaturated-blue: hsl(224, 23%, 55%);
+     --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+     margin: 0;
+     padding: 0
+}
+
+html, body {
+     background-attachment: fixed;
+     background-color: var(--pale-blue);
+     background-image: url('./images/pattern-background-desktop.svg');
+     background-position: top left;
+     background-repeat: no-repeat;
+     background-size: 100% 50%;
+     min-height: 100vh;
+     min-width: 100vw;
+}
+
+.order-main {
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     height: 100vh;
+}
+
+.order-card {
+     background-color: white;
+     border-radius: 15px;
+     box-shadow: -10px 40px 50px -25px rgba(0, 0, 0, 0.25);
+     display: flex;
+     flex-direction: column;
+     font-family: 'Red Hat Display', sans-serif;
+     font-weight: 500;
+     max-width: 425px;
+     overflow: hidden;
+     transform: scale(0.85);
+}
+
+.order-picture img {
+     max-width: 425px;
+     object-fit: contain;
+     width: 100%;
+}
+
+.order-content {
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 2.5rem;
+}
+
+.order-heading {
+     color: var(--dark-blue);
+     font-weight: 900;
+}
+
+.order-summary h1, .order-summary .order-descrip {
+     text-align: center;
+}
+
+.order-descrip {
+     color: var(--desaturated-blue);
+     font-size: 1rem;
+     font-weight: 500;
+     line-height: 1.5;
+     padding: 1rem 0;
+}
+
+.order-plan {
+     background-color: var(--very-pale-blue);
+     border-radius: 10px;
+     display: grid;
+     grid-template-columns: 70px 1fr 50px;
+     overflow: hidden;
+     padding: 1rem;
+     place-content: center;
+     place-items: center;
+}
+
+.order-name .order-heading {
+     font-size: 1rem;
+     font-weight: 900;
+}
+
+.order-change {
+     color: var(--bright-blue);
+     font-size: 0.75rem;
+     font-weight: 700;
+}
+
+.order-change:hover {
+     text-decoration: none;
+}
+
+.order-price {
+     color: var(--desaturated-blue);
+}
+
+.order-name {
+     display: grid;
+     gap: 0.25rem;
+     grid: 1fr / 1fr;
+     justify-items: start;
+     padding-left: 1rem;
+     width: 100%;
+}
+
+.order-payment {
+     all: unset;
+     color: white;
+     cursor: pointer;
+     background-color: var(--bright-blue);
+     border-radius: 10px;
+     box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.25);
+     font-size: 1rem;
+     margin: 1.5rem 0;
+     padding: 0.75rem 0;
+     text-align: center;
+     width: 100%;
+     transition: opacity 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+
+.order-payment:hover {
+     box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.7);
+     opacity: 0.7;
+     transition: opacity 0.1s ease-out, box-shadow 0.2s ease-out;
+}
+
+
+.order-cancel {
+     color: var(--desaturated-blue);
+     font-weight: 700;
+     text-decoration: none;
+     transition: color 0.3s ease-in;
+}
+
+.order-cancel:hover {
+     color: var(--dark-blue);
+     transition: color 0.1s ease-out;
+}
+
+@media only screen and (max-width: 640px) {
+     html, body {
+          background-attachment: fixed;
+          background-image: url('./images/pattern-background-mobile.svg');
+          background-position: top left;
+          background-repeat: no-repeat;
+          background-size: 100% 30%;
+     }
+}
