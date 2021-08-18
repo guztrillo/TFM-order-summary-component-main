@@ -41,7 +41,6 @@ html, body {
      font-weight: 500;
      max-width: 425px;
      overflow: hidden;
-     transform: scale(0.85);
 }
 
 .order-picture img {
