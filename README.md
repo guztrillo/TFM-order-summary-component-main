@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [FAQ accordion card solution](https://guztrillo.github.io/TFM-FAQ-accordion-card/)
+- Live Site URL: [Order summary card](https://guztrillo.github.io/TFM-order-summary-component-main/)
 
 ## My process
 
